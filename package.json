@@ -1,10 +1,16 @@
 {
   "name": "lit-ssr-examples",
+  "scripts": {
+    "start": "vercel dev --listen 80"
+  },
   "dependencies": {
     "@lit-labs/ssr": "^3.1.5",
     "lit": "^2.8.0"
   },
   "devDependencies": {
     "@web-types/lit": "^2.0.0-3"
+  },
+  "imports": {
+    "##/*": "./*"
   }
 }
