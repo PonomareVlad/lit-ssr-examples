@@ -10,6 +10,11 @@ import '##/src/server-url.mjs';
 import {
   urlFromRequest
 } from '##/src/utils.mjs';
+import importmap from '##/importmap.json' assert {type: 'json'};
+
+const head = () => render(html`
+  <script src='/src/server-url.mjs' type='module'></script>
+`);
 
 const body = ({url = ''} = {}) => render(html`
   <server-url url='${url}'></server-url>
@@ -17,8 +22,7 @@ const body = ({url = ''} = {}) => render(html`
 
 export default (request, response) => {
   const url = urlFromRequest(request);
-  const options = {body, context: {url}};
-  const result = pageTemplate(options);
+  const result = pageTemplate({head, body, importmap, context: {url}});
   response.setHeader('content-type', 'text/html');
   response.send(collectResultSync(result));
 }

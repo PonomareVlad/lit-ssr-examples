@@ -1,6 +1,4 @@
-import {css, html, nothing} from 'lit';
-
-const empty = () => '';
+import {css} from 'lit';
 
 const defaultStyle = css`
 
@@ -25,8 +23,9 @@ const defaultStyle = css`
 
 export function* pageTemplate(
   {
-    head = empty,
-    body = empty,
+    head,
+    body,
+    importmap,
     context = {},
     style = defaultStyle
   }
@@ -37,19 +36,36 @@ export function* pageTemplate(
     <head>
       <meta charset='UTF-8'>
       <meta content='dark light' name='color-scheme'>
-      <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
+      <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' 
+        name='viewport'>
       <style>`;
   yield style.toString();
   yield `</style>`;
-  yield* head(context);
-  yield `</head>
+  if (importmap) yield `
+  <script type='importmap'>
+    ${JSON.stringify(importmap, null, 2)}
+  </script>
+  `;
+  yield `
+  <script async crossorigin='anonymous' 
+    src='https://ga.jspm.io/npm:es-module-shims@1.8.0/dist/es-module-shims.js'>
+  </script>
+  <script type='module'>
+    import "@lit-labs/ssr-client/lit-element-hydrate-support.js";
+  </script>
+  `;
+  if (head) yield* head(context);
+  yield `
+    </head>
     <body>
-    <main>`;
-  yield* body(context);
+    <main>
+  `;
+  if (body) yield* body(context);
   yield `</main>
     <footer>
       <p>← <a href='/'>Back to examples list</a></p>
     </footer>
     </body>
-    </html>`;
+    </html>
+  `;
 }
