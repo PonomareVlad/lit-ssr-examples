@@ -61,7 +61,8 @@ export function* pageTemplate(
     <main>
   `;
   if (body) yield* body(context);
-  yield `</main>
+  yield `
+    </main>
     <footer>
       <p>← <a href='/'>Back to examples list</a></p>
     </footer>
