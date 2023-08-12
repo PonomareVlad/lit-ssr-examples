@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "**": {
+      "includeFiles": "*.json"
+    }
+  },
+  "installCommand": "npm ci --omit=dev"
+}

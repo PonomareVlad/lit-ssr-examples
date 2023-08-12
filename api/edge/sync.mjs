@@ -5,12 +5,12 @@ import {
 } from '@lit-labs/ssr/lib/render-result.js';
 import {
   pageTemplate
-} from '##/src/page-template.mjs';
-import '##/src/server-url.mjs';
+} from '../../src/page-template.mjs';
+import '../../src/server-url.mjs';
 import {
   urlFromRequest
-} from '##/src/utils.mjs';
-import importmap from '##/importmap.json';
+} from '../../src/utils.mjs';
+import importmap from '../../importmap.json';
 
 const headers = {'content-type': 'text/html'};
 

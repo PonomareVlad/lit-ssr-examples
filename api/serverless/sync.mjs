@@ -10,7 +10,7 @@ import '##/src/server-url.mjs';
 import {
   urlFromRequest
 } from '##/src/utils.mjs';
-import importmap from '##/importmap.json' assert {type: 'json'};
+import importmap from '##/src/importmap.mjs';
 
 const head = () => render(html`
   <script src='/src/server-url.mjs' type='module'></script>
