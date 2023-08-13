@@ -4,24 +4,24 @@
     "start": "vercel dev --listen 80"
   },
   "dependencies": {
-    "@lit-labs/ssr": "npm:@ponomarevlad/lit-labs-ssr@3.1.5-ssr-readable-exports-npm-1",
-    "lit": "npm:@ponomarevlad/lit@2.8.0-ssr-readable-exports-npm-1"
+    "@lit-labs/ssr": "npm:@ponomarevlad/lit-labs-ssr@3.1.5-merge-1",
+    "lit": "npm:@ponomarevlad/lit@2.8.0-merge-1"
   },
   "devDependencies": {
     "@web-types/lit": "^2.0.0-3"
   },
   "overrides": {
     "entities": "npm:@ponomarevlad/entities@4.5.0-browser-target-5",
-    "@lit-labs/ssr": "npm:@ponomarevlad/lit-labs-ssr@3.1.5-ssr-readable-exports-npm-1",
-    "@lit-labs/task": "npm:@ponomarevlad/lit-labs-task@3.0.0-ssr-readable-exports-npm-1",
-    "@lit-labs/router": "npm:@ponomarevlad/lit-labs-router@0.1.1-ssr-readable-exports-npm-1",
-    "@lit-labs/context": "npm:@ponomarevlad/lit-labs-context@0.3.3-ssr-readable-exports-npm-1",
-    "@lit-labs/ssr-client": "npm:@ponomarevlad/lit-labs-ssr-client@1.1.3-ssr-readable-exports-npm-1",
-    "@lit-labs/ssr-dom-shim": "npm:@ponomarevlad/lit-labs-ssr-dom-shim@1.1.1-ssr-readable-exports-npm-1",
-    "@lit/reactive-element": "npm:@ponomarevlad/reactive-element@1.6.3-ssr-readable-exports-npm-1",
-    "lit-element": "npm:@ponomarevlad/lit-element@3.3.3-ssr-readable-exports-npm-1",
-    "lit-html": "npm:@ponomarevlad/lit-html@2.8.0-ssr-readable-exports-npm-1",
-    "lit": "npm:@ponomarevlad/lit@2.8.0-ssr-readable-exports-npm-1"
+    "@lit-labs/ssr": "npm:@ponomarevlad/lit-labs-ssr@3.1.5-merge-1",
+    "@lit-labs/task": "npm:@ponomarevlad/lit-labs-task@3.0.0-merge-1",
+    "@lit-labs/router": "npm:@ponomarevlad/lit-labs-router@0.1.1-merge-1",
+    "@lit-labs/context": "npm:@ponomarevlad/lit-labs-context@0.3.3-merge-1",
+    "@lit-labs/ssr-client": "npm:@ponomarevlad/lit-labs-ssr-client@1.1.3-merge-1",
+    "@lit-labs/ssr-dom-shim": "npm:@ponomarevlad/lit-labs-ssr-dom-shim@1.1.1-merge-1",
+    "@lit/reactive-element": "npm:@ponomarevlad/reactive-element@1.6.3-merge-1",
+    "lit-element": "npm:@ponomarevlad/lit-element@3.3.3-merge-1",
+    "lit-html": "npm:@ponomarevlad/lit-html@2.8.0-merge-1",
+    "lit": "npm:@ponomarevlad/lit@2.8.0-merge-1"
   },
   "imports": {
     "##/*": "./*"
