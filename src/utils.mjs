@@ -6,7 +6,7 @@ export const urlFromServerlessRequest = (
       ['x-forwarded-proto']: proto
     }
   } = {}
-) => new URL(pathname, `${proto}://${host}`);
+) => new URL(pathname, `${proto}://${host}`).href;
 
 export const urlFromEdgeRequest = (
   {
@@ -19,7 +19,7 @@ export const urlFromEdgeRequest = (
     headers.get('x-forwarded-proto'),
     headers.get('x-forwarded-host')
   ].join('://')
-);
+).href;
 
 export const urlFromRequest =
   typeof EdgeRuntime !== 'string' ?

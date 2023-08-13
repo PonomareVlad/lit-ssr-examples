@@ -1,11 +1,13 @@
 {
   "imports": {
+    "@lit-labs/context": "https://ga.jspm.io/npm:@lit-labs/context@0.3.3/development/index.js",
     "@lit-labs/ssr-client/lit-element-hydrate-support.js": "https://ga.jspm.io/npm:@lit-labs/ssr-client@1.1.3/development/lit-element-hydrate-support.js",
     "lit": "https://ga.jspm.io/npm:lit@2.8.0/index.js"
   },
   "scopes": {
     "https://ga.jspm.io/": {
       "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.2/development/reactive-element.js",
+      "@lit/reactive-element/decorators/base.js": "https://ga.jspm.io/npm:@lit/reactive-element@1.6.2/development/decorators/base.js",
       "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.3.3/development/lit-element.js",
       "lit-html": "https://ga.jspm.io/npm:lit-html@2.8.0/development/lit-html.js",
       "lit-html/": "https://ga.jspm.io/npm:lit-html@2.8.0/development/"

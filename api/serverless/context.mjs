@@ -6,6 +6,7 @@ import {
 import {
   pageTemplate
 } from '##/src/page-template.mjs';
+import '##/src/page-context.mjs';
 import '##/src/server-url.mjs';
 import {
   urlFromRequest
@@ -13,11 +14,14 @@ import {
 import importmap from '##/src/importmap.mjs';
 
 const head = () => render(html`
+  <script src='/src/page-context.mjs' type='module' defer></script>
   <script src='/src/server-url.mjs' type='module' defer></script>
 `);
 
-const body = ({url = ''} = {}) => render(html`
-  <server-url url='${url}'></server-url>
+const body = context => render(html`
+  <page-context .page='${context}'>
+    <server-url></server-url>
+  </page-context>
 `);
 
 export default (request, response) => {

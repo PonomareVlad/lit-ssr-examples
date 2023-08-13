@@ -15,7 +15,7 @@ import importmap from '../../importmap.json';
 const headers = {'content-type': 'text/html'};
 
 const head = () => render(html`
-  <script src='/src/server-url.mjs' type='module'></script>
+  <script src='/src/server-url.mjs' type='module' defer></script>
 `);
 
 const body = ({url = ''} = {}) => render(html`

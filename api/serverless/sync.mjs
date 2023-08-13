@@ -13,7 +13,7 @@ import {
 import importmap from '##/src/importmap.mjs';
 
 const head = () => render(html`
-  <script src='/src/server-url.mjs' type='module'></script>
+  <script src='/src/server-url.mjs' type='module' defer></script>
 `);
 
 const body = ({url = ''} = {}) => render(html`
