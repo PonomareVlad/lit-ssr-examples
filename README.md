@@ -2,4 +2,4 @@
 
 > ⚠️ Work in progress, see sources
 
-[Live demo](https://github.com/PonomareVlad/lit-ssr-examples)
+[Live demo](https://lit-ssr-examples.vercel.app)
