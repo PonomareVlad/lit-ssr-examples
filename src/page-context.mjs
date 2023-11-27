@@ -1,5 +1,5 @@
 import {LitElement, html} from 'lit';
-import {ContextProvider, createContext} from '@lit-labs/context';
+import {ContextProvider, createContext} from '@lit/context';
 
 export const context = createContext(Symbol('page'));
 

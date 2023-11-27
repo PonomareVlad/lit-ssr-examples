@@ -1,5 +1,5 @@
 import {LitElement, html, css} from 'lit';
-import {ContextConsumer} from '@lit-labs/context';
+import {ContextConsumer} from '@lit/context';
 import {context} from './page-context.mjs';
 
 export class ServerURL extends LitElement {
