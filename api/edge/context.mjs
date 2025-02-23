@@ -1,3 +1,4 @@
+import '@lit-labs/ssr-dom-shim';
 import {html} from 'lit';
 import {render} from '@lit-labs/ssr';
 import {
