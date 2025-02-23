@@ -1,7 +1,8 @@
 {
   "name": "lit-ssr-examples",
   "scripts": {
-    "start": "vercel dev --listen 80"
+    "start": "vercel dev --listen 80",
+    "postinstall": "patch-package"
   },
   "imports": {
     "##/*": "./*"
@@ -10,21 +11,12 @@
     "@web-types/lit": "^2.0.0-3"
   },
   "dependencies": {
-    "@lit/context": "npm:@ponomarevlad/lit-context@1.1.0-ssr-readable-events-exports-npm-3",
-    "@lit-labs/ssr": "npm:@ponomarevlad/lit-labs-ssr@3.2.0-ssr-readable-events-exports-npm-3",
-    "lit": "npm:@ponomarevlad/lit@3.1.0-ssr-readable-events-exports-npm-3"
+    "@lit-labs/ssr": "^3.3.1",
+    "@lit/context": "^1.1.4",
+    "lit": "^3.2.1",
+    "patch-package": "^8.0.0"
   },
   "overrides": {
-    "entities": "npm:@ponomarevlad/entities@4.5.0-browser-target-5",
-    "@lit-labs/ssr": "npm:@ponomarevlad/lit-labs-ssr@3.2.0-ssr-readable-events-exports-npm-3",
-    "@lit/task": "npm:@ponomarevlad/lit-task@1.0.0-ssr-readable-events-exports-npm-3",
-    "@lit-labs/router": "npm:@ponomarevlad/lit-labs-router@0.1.3-ssr-readable-events-exports-npm-3",
-    "@lit/context": "npm:@ponomarevlad/lit-context@1.1.0-ssr-readable-events-exports-npm-3",
-    "@lit-labs/ssr-client": "npm:@ponomarevlad/lit-labs-ssr-client@1.1.5-ssr-readable-events-exports-npm-3",
-    "@lit-labs/ssr-dom-shim": "npm:@ponomarevlad/lit-labs-ssr-dom-shim@1.1.2-ssr-readable-events-exports-npm-3",
-    "@lit/reactive-element": "npm:@ponomarevlad/reactive-element@2.0.2-ssr-readable-events-exports-npm-3",
-    "lit-element": "npm:@ponomarevlad/lit-element@4.0.2-ssr-readable-events-exports-npm-3",
-    "lit-html": "npm:@ponomarevlad/lit-html@3.1.0-ssr-readable-events-exports-npm-3",
-    "lit": "npm:@ponomarevlad/lit@3.1.0-ssr-readable-events-exports-npm-3"
+    "entities": "npm:@ponomarevlad/entities@4.5.0-browser-target-5"
   }
 }
