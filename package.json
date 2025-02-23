@@ -15,6 +15,6 @@
     "lit": "^3.2.1"
   },
   "overrides": {
-    "entities": "npm:entities@^6.0.0"
+    "entities": "npm:@ponomarevlad/entities@4.5.0-browser-target-5"
   }
 }
