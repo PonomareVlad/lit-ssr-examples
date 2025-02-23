@@ -1,3 +1,4 @@
 [submodule "src/lit"]
 	path = src/lit
 	url = https://github.com/PonomareVlad/lit
+	branch = wintercg-exports
