@@ -16,9 +16,11 @@ export class ServerURL extends LitElement {
   _page = new ContextConsumer(this, {context, subscribe: true});
 
   render() {
+    const date = new Date();
     const url = this.url || this._page.value?.url;
     return html`
       <h1>Server URL</h1>
+      <time>${date}</time>
       <pre>${url}</pre>
     `;
   }
