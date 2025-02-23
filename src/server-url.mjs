@@ -25,6 +25,10 @@ export class ServerURL extends LitElement {
     `;
   }
 
+  firstUpdated(_changedProperties) {
+    this.requestUpdate();
+  }
+
 }
 
 customElements.define('server-url', ServerURL);
