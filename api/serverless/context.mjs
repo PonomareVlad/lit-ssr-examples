@@ -13,6 +13,8 @@ import {
 } from '##/src/utils.mjs';
 import importmap from '##/src/importmap.mjs';
 
+globalThis.litSsrCallConnectedCallback = true;
+
 const head = () => render(html`
   <script src='/src/page-context.mjs' type='module' defer></script>
   <script src='/src/server-url.mjs' type='module' defer></script>

@@ -13,6 +13,8 @@ import {
 } from '../../src/utils.mjs';
 import importmap from '../../importmap.json';
 
+globalThis.litSsrCallConnectedCallback = true;
+
 const headers = {'content-type': 'text/html'};
 
 const head = () => render(html`
