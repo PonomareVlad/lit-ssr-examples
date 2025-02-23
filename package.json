@@ -1,7 +1,8 @@
 {
   "name": "lit-ssr-examples",
   "scripts": {
-    "start": "vercel dev --listen 80"
+    "start": "vercel dev --listen 80",
+    "postinstall": "patch-package"
   },
   "imports": {
     "##/*": "./*"
@@ -12,7 +13,8 @@
   "dependencies": {
     "@lit-labs/ssr": "^3.3.1",
     "@lit/context": "^1.1.4",
-    "lit": "^3.2.1"
+    "lit": "^3.2.1",
+    "patch-package": "^8.0.0"
   },
   "overrides": {
     "entities": "npm:@ponomarevlad/entities@4.5.0-browser-target-5"
