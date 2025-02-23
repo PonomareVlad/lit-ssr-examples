@@ -10,12 +10,14 @@
     "@web-types/lit": "^2.0.0-3"
   },
   "dependencies": {
+    "@lit-internal/scripts": "file:src/lit/packages/internal-scripts",
     "@lit/context": "file:src/lit/packages/context",
     "@lit-labs/ssr": "file:src/lit/packages/labs/ssr",
     "lit": "file:src/lit/packages/lit"
   },
   "overrides": {
     "entities": "npm:@ponomarevlad/entities@4.5.0-browser-target-5",
+    "@lit-internal/scripts": "file:src/lit/packages/internal-scripts",
     "@lit-labs/ssr": "file:src/lit/packages/labs/ssr",
     "@lit/task": "file:src/lit/packages/task",
     "@lit-labs/router": "file:src/lit/packages/labs/router",
