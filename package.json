@@ -10,13 +10,21 @@
     "@web-types/lit": "^2.0.0-3"
   },
   "dependencies": {
-    "@lit-internal/scripts": "file:src/lit/packages/internal-scripts",
-    "@lit-labs/ssr": "file:src/lit/packages/labs/ssr",
     "@lit/context": "file:src/lit/packages/context",
+    "@lit-labs/ssr": "file:src/lit/packages/labs/ssr",
     "lit": "file:src/lit/packages/lit"
   },
   "overrides": {
-    "@lit-internal/scripts": "file:src/lit/packages/internal-scripts",
-    "entities": "npm:@ponomarevlad/entities@4.5.0-browser-target-5"
+    "entities": "npm:@ponomarevlad/entities@4.5.0-browser-target-5",
+    "@lit-labs/ssr": "file:src/lit/packages/labs/ssr",
+    "@lit/task": "file:src/lit/packages/task",
+    "@lit-labs/router": "file:src/lit/packages/labs/router",
+    "@lit/context": "file:src/lit/packages/context",
+    "@lit-labs/ssr-client": "file:src/lit/packages/labs/ssr-client",
+    "@lit-labs/ssr-dom-shim": "file:src/lit/packages/labs/ssr-dom-shim",
+    "@lit/reactive-element": "file:src/lit/packages/reactive-element",
+    "lit-element": "file:src/lit/packages/lit-element",
+    "lit-html": "file:src/lit/packages/lit-html",
+    "lit": "file:src/lit/packages/lit"
   }
 }
