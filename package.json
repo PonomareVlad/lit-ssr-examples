@@ -10,11 +10,13 @@
     "@web-types/lit": "^2.0.0-3"
   },
   "dependencies": {
-    "@lit-labs/ssr": "^3.3.1",
-    "@lit/context": "^1.1.4",
-    "lit": "^3.2.1"
+    "@lit-internal/scripts": "file:src/lit/packages/internal-scripts",
+    "@lit-labs/ssr": "file:src/lit/packages/labs/ssr",
+    "@lit/context": "file:src/lit/packages/context",
+    "lit": "file:src/lit/packages/lit"
   },
   "overrides": {
+    "@lit-internal/scripts": "file:src/lit/packages/internal-scripts",
     "entities": "npm:@ponomarevlad/entities@4.5.0-browser-target-5"
   }
 }
