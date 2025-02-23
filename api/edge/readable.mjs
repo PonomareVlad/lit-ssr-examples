@@ -2,7 +2,7 @@ import {html} from 'lit';
 import {render} from '@lit-labs/ssr';
 import {
   createReadableStream
-} from '../../src/render-result-readable-stream.js';
+} from '@lit-labs/ssr/lib/render-result-readable-stream.js';
 import {
   pageTemplate
 } from '../../src/page-template.mjs';
