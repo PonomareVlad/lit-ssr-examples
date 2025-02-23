@@ -4,5 +4,5 @@
       "includeFiles": "*.json"
     }
   },
-  "installCommand": "cd src/lit && npm ci && npm run build && cd ../.. && npm ci --omit=dev"
+  "installCommand": "cd src/lit && npm ci && npm run build && cd ../.. && npm i"
 }
