@@ -8,13 +8,13 @@
     "##/*": "./*"
   },
   "devDependencies": {
-    "@web-types/lit": "^2.0.0-3"
+    "@web-types/lit": "2.0.0-3"
   },
   "dependencies": {
-    "@lit-labs/ssr": "^3.3.1",
-    "@lit/context": "^1.1.4",
-    "lit": "^3.2.1",
-    "patch-package": "^8.0.0"
+    "@lit-labs/ssr": "3.3.1",
+    "@lit/context": "1.1.4",
+    "lit": "3.2.1",
+    "patch-package": "8.0.0"
   },
   "overrides": {
     "entities": "npm:@ponomarevlad/entities@4.5.0-browser-target-5"
